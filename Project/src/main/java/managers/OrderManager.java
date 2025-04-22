@@ -27,7 +27,7 @@ public class OrderManager {
         System.out.println("Please enter the weight of the order: ");
         while (!scanner.hasNextFloat()) {
             System.out.println("Invalid input. Please enter a valid weight (e.g., 5.5): ");
-            scanner.next(); // Очищаем буфер
+            scanner.next();
         }
         float weight = scanner.nextFloat();
 
@@ -35,7 +35,7 @@ public class OrderManager {
             System.out.println("Weight must be greater than 0.");
             return;
         }
-        scanner.nextLine(); // Очищаем буфер после ввода числа
+        scanner.nextLine(); 
 
         System.out.println("Please choose the delivery type: (1-AVIA, 2-TRUCK, 3-TRAIN) ");
         int choice = scanner.nextInt();
@@ -65,7 +65,7 @@ public class OrderManager {
         System.out.println("Please enter the ID of the order you would like to update: ");
         while (!in.hasNextInt()) {
             System.out.println("Invalid input. Please enter a valid order ID.");
-            in.next(); // очищаем буфер
+            in.next(); 
         }
         int choice = in.nextInt();
         in.nextLine();
@@ -97,7 +97,7 @@ public class OrderManager {
 
         while (!in.hasNextInt()) {
             System.out.println("Invalid choice. Please enter a valid option.");
-            in.next(); // очищаем буфер
+            in.next(); 
         }
         int choice2 = in.nextInt();
 
@@ -118,7 +118,7 @@ public class OrderManager {
                 System.out.println("2. TRUCK");
                 System.out.println("3. TRAIN");
                 int choice3 = in.nextInt();
-                in.nextLine(); // очищаем буфер
+                in.nextLine(); 
 
                 switch (choice3) {
                     case 1:
@@ -182,7 +182,7 @@ public class OrderManager {
         System.out.println("Please enter the ID of the order you would like to delete: ");
         while (!in.hasNextInt()) {
             System.out.println("Invalid input. Please enter a valid order ID.");
-            in.next(); // очищаем буфер
+            in.next(); 
         }
         int choice = in.nextInt();
         in.nextLine();
