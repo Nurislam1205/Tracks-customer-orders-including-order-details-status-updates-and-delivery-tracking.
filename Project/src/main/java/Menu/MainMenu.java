@@ -99,8 +99,7 @@ public class MainMenu {
                             break;
                         case 2:
                             if(currentUser.getRole().equals("admin")) {
-                                // Для этого случая нужно будет передать UserManager
-                                // ReportGenerator.generateUserActivityReport(userManager.getUsers(), orderManager.getOrders());
+                             
                                 System.out.println("This feature requires admin privileges");
                             } else {
                                 System.out.println("Access denied - admin only");
