@@ -17,7 +17,6 @@ public class UserManager {
         }
     }
 
-    // Логика для авторизации
     public User login(Scanner scanner) {
         System.out.print("Login: ");
         String username = scanner.next();
@@ -37,12 +36,10 @@ public class UserManager {
         }
     }
 
-    // Регистрация нового пользователя
     public void register(Scanner scanner) {
         System.out.print("Enter new username: ");
         String username = scanner.next();
 
-        // Проверка на существование такого имени пользователя
         if (users.stream().anyMatch(user -> user.getUserName().equals(username))) {
             System.out.println("Username already exists.");
             return;
@@ -51,14 +48,12 @@ public class UserManager {
         System.out.print("Enter password: ");
         String password = scanner.next();
 
-        // Добавляем нового пользователя
         User newUser = new User(username, password, "user");
         users.add(newUser);
         saveUsersToFile();
         System.out.println("User registered.");
     }
 
-    // Сохранение списка пользователей в файл
     private void saveUsersToFile() {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(FILE_NAME))) {
             oos.writeObject(users);
@@ -67,27 +62,24 @@ public class UserManager {
         }
     }
 
-    // Загрузка списка пользователей из файла
     private List<User> loadUsersFromFile() {
         File file = new File(FILE_NAME);
         if (!file.exists()) {
-            return new ArrayList<>(); // Если файл не существует, возвращаем пустой список
+            return new ArrayList<>(); 
         }
 
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(FILE_NAME))) {
             return (List<User>) ois.readObject();
         } catch (IOException | ClassNotFoundException e) {
             System.out.println("Error loading users from file: " + e.getMessage());
-            return new ArrayList<>(); // Возвращаем пустой список при ошибке
+            return new ArrayList<>();
         }
     }
 
-    // Получение списка всех пользователей
     public List<User> getUsers() {
         return users;
     }
 
-    // Удаление пользователя
     public void deleteUser(String username) {
         boolean removed = users.removeIf(user -> user.getUserName().equals(username));
         if (removed) {
