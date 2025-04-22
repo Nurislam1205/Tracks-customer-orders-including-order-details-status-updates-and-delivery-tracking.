@@ -72,7 +72,7 @@ public class MainMenu {
                     System.out.println("1 - Export orders to JSON");
                     System.out.println("2 - Import orders from JSON");
                     int option = in.nextInt();
-                    in.nextLine(); // очистка буфера
+                    in.nextLine(); 
 
                     switch (option) {
                         case 1:
