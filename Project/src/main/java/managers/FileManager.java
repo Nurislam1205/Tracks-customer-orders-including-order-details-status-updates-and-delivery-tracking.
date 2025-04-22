@@ -12,7 +12,6 @@ import java.util.List;
 public class FileManager {
     private static final ObjectMapper mapper = new ObjectMapper();
 
-    // Экспорт заказов в файл JSON
     public static void exportOrdersToJSON(List<Order> orders, String fileName) {
         try {
             File file = new File(fileName);
