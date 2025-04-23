@@ -1,0 +1,17 @@
+[ {
+  "id" : 1,
+  "nameOrder" : "1",
+  "weight" : 1.0,
+  "deliveryType" : "AVIA",
+  "totalPrice" : 9.1,
+  "username" : "Ronaldo",
+  "info" : "ID: 1, Name: 1, Weight: 1.0kg, Delivery: AVIA, Total Price: $9.1, User: Ronaldo"
+}, {
+  "id" : 1,
+  "nameOrder" : "3",
+  "weight" : 3.0,
+  "deliveryType" : "TRAIN",
+  "totalPrice" : 4.5,
+  "username" : "Ronaldo",
+  "info" : "ID: 1, Name: 3, Weight: 3.0kg, Delivery: TRAIN, Total Price: $4.5, User: Ronaldo"
+} ]
