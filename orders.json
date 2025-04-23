@@ -1,0 +1,49 @@
+[ {
+  "id" : 1,
+  "nameOrder" : "1",
+  "weight" : 1.0,
+  "deliveryType" : "AVIA",
+  "totalPrice" : 9.1,
+  "username" : "Ronaldo",
+  "info" : "ID: 1, Name: 1, Weight: 1.0kg, Delivery: AVIA, Total Price: $9.1, User: Ronaldo"
+}, {
+  "id" : 1,
+  "nameOrder" : "3",
+  "weight" : 3.0,
+  "deliveryType" : "TRAIN",
+  "totalPrice" : 4.5,
+  "username" : "Ronaldo",
+  "info" : "ID: 1, Name: 3, Weight: 3.0kg, Delivery: TRAIN, Total Price: $4.5, User: Ronaldo"
+}, {
+  "id" : 1,
+  "nameOrder" : "Laptop",
+  "weight" : 3.0,
+  "deliveryType" : "AVIA",
+  "totalPrice" : 27.300001,
+  "username" : "Nurislam",
+  "info" : "ID: 1, Name: Laptop, Weight: 3.0kg, Delivery: AVIA, Total Price: $27.300001, User: Nurislam"
+}, {
+  "id" : 2,
+  "nameOrder" : "Phone",
+  "weight" : 1.0,
+  "deliveryType" : "TRAIN",
+  "totalPrice" : 1.5,
+  "username" : "Nurislam",
+  "info" : "ID: 2, Name: Phone, Weight: 1.0kg, Delivery: TRAIN, Total Price: $1.5, User: Nurislam"
+}, {
+  "id" : 3,
+  "nameOrder" : "Car",
+  "weight" : 2000.0,
+  "deliveryType" : "TRUCK",
+  "totalPrice" : 8600.0,
+  "username" : "Nurislam",
+  "info" : "ID: 3, Name: Car, Weight: 2000.0kg, Delivery: TRUCK, Total Price: $8600.0, User: Nurislam"
+}, {
+  "id" : 4,
+  "nameOrder" : "PC",
+  "weight" : 10.0,
+  "deliveryType" : "AVIA",
+  "totalPrice" : 91.0,
+  "username" : "Nurislam",
+  "info" : "ID: 4, Name: PC, Weight: 10.0kg, Delivery: AVIA, Total Price: $91.0, User: Nurislam"
+} ]
